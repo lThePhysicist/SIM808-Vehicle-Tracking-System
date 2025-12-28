@@ -1,17 +1,17 @@
 DTMF-Controlled SIM808-Based Vehicle Tracking System
-📌 Project Overview
+ Project Overview
 Developed using an Arduino Mega 2560 and a SIM808 module, this system enables remote vehicle tracking and control via incoming phone calls using DTMF tones. It retrieves GPS location data, measures signal strength (RSSI), and sends the information back to the caller via SMS. The project includes features such as call answering, caller number detection, and dynamic generation of Google Maps links. Communication is handled using standard AT commands.
 
 This project bridges embedded systems engineering with telecommunications by utilizing GPRS for data logging and DTMF (Dual-Tone Multi-Frequency) signaling for real-time user interaction.
 
-🛠️ Hardware & Components
+ Hardware & Components
 Arduino Mega 2560: Selected for its multiple hardware serial ports (Serial1, Serial2, etc.) and larger memory capacity. This ensures stable UART communication with the GSM module while simultaneously debugging via the main Serial port.
 
 SIM808 GSM/GPRS/GPS Module: A 2-in-1 module that handles cellular communication (Calls/SMS/GPRS) and satellite positioning (GPS).
 
 Power Supply: A dedicated high-current (2A+) power source is used for the SIM808 to prevent brownouts during network bursts.
 
-⚙️ How It Works
+ How It Works
 The system operates on a state-machine logic driven by incoming interrupts and timer-based sampling.
 
 1. Initialization & Configuration
@@ -73,7 +73,7 @@ AT+CMGS,Sends an SMS message.
 AT+CIMI,Reads the IMSI (International Mobile Subscriber Identity).
 AT+GSN,Reads the IMEI (International Mobile Equipment Identity).
 
-🚀 Installation & Usage
+ Installation & Usage
 Wiring: Connect the SIM808 TX to Arduino Mega RX1 (Pin 19) and RX to TX1 (Pin 18). ensure common Ground.
 
 Power: Supply 5V-9V (2A) to the SIM808.
