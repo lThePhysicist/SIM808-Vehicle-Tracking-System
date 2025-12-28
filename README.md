@@ -46,7 +46,7 @@ Trimmed Mean Algorithm: To eliminate GPS drift and signal spikes, a trimmed mean
 4. Cloud Integration (IoT)
 The processed data is transmitted over GPRS using HTTP GET requests to the ThingSpeak API, allowing for real-time visualization of the vehicle's speed and signal parameters.
 
-📟 AT Command Reference Table
+ AT Command Reference Table
 Below is the list of AT commands used in this project to control the SIM808 module.
 AT Command,Description
 AT,Checks if the module is responsive (Communication handshake).
